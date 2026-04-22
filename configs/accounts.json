@@ -5,11 +5,9 @@
   "tradelocker": {
     "environment": "demo",
     "base_url": "https://demo.tradelocker.com/backend-api/",
-    "email": "dakotapayne3@gmail.com",
-    "password": "&E7M~i-:(L",
-    "server": "HEROFX",
-    "account_id": "2124216",
-    "acc_num": 1
+    "username": "YOUR_TRADELOCKER_USERNAME",
+    "password": "YOUR_TRADELOCKER_PASSWORD",
+    "server_id": "YOUR_TRADELOCKER_SERVER_ID"
   },
   "dxtrade": {
     "environment": "demo",
