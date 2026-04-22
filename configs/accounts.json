@@ -1,0 +1,18 @@
+{
+  "mt5_master": {
+    "name": "master-demo-1"
+  },
+  "tradelocker": {
+    "environment": "demo",
+    "base_url": "https://demo.tradelocker.com/backend-api/",
+    "username": "YOUR_TRADELOCKER_USERNAME",
+    "password": "YOUR_TRADELOCKER_PASSWORD",
+    "server_id": "YOUR_TRADELOCKER_SERVER_ID"
+  },
+  "dxtrade": {
+    "environment": "demo",
+    "base_url": "https://YOUR_DXTRADE_DEMO_BASE_URL",
+    "username": "YOUR_DXTRADE_USERNAME",
+    "password": "YOUR_DXTRADE_PASSWORD"
+  }
+}
