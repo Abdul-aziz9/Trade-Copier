@@ -44,13 +44,14 @@ def ingest_mt5_trade(event: MT5TradeEvent) -> dict:
                 sl=event.sl,
                 tp=event.tp,
             )
-            upsert_trade_link(
-                source_ticket=event.source_ticket,
-                target_platform=platform,
-                target_order_id=result.get("target_order_id"),
-                target_position_id=result.get("target_position_id"),
-                status=result["status"],
-            )
+            if result.get("ok"):
+                upsert_trade_link(
+                    source_ticket=event.source_ticket,
+                    target_platform=platform,
+                    target_order_id=result.get("target_order_id"),
+                    target_position_id=result.get("target_position_id"),
+                    status=result["status"],
+                )
             results.append(result)
 
         elif event.action == "CLOSE":

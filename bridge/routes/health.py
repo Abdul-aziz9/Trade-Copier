@@ -11,10 +11,6 @@ def health() -> dict:
     tl = TradeLockerConnector()
     dx = DXTradeConnector()
 
-    # Stage 1: attempt login so health becomes useful
-    tl.login()
-    dx.login()
-
     return {
         "status": "ok",
         "tradelocker": tl.health_check(),
